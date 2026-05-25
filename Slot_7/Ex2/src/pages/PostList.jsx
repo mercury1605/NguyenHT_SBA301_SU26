@@ -1,6 +1,6 @@
 // src/pages/PostList.jsx
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import {
   Container,
   Row,
@@ -15,15 +15,26 @@ import { posts } from "../data/posts";
 
 function PostList() {
   const navigate = useNavigate();
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useSearchParams();
   const [activeCategory, setActiveCategory] = useState("Tất cả");
+  const keyString = search.get('key') || ""
+
+  const updateSearch = (key) => {
+    if (key?.trim() === '') {
+      setSearch({})
+      return
+    }
+    if (typeof key === 'string') {
+      setSearch({ key })
+    }
+  }
 
   // Lấy danh sách category không trùng
   const categories = ["Tất cả", ...new Set(posts.map((p) => p.category))];
 
   // Lọc theo tìm kiếm và category
   const filtered = posts.filter((post) => {
-    const matchSearch = post.title.toLowerCase().includes(search.toLowerCase());
+    const matchSearch = post.title.toLowerCase().includes(keyString.toLowerCase());
     const matchCat =
       activeCategory === "Tất cả" || post.category === activeCategory;
     return matchSearch && matchCat;
@@ -37,12 +48,12 @@ function PostList() {
       <InputGroup className="mb-3">
         <InputGroup.Text>🔍</InputGroup.Text>
         <Form.Control
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
+          value={keyString}
+          onChange={(e) => updateSearch(e.target.value)}
           placeholder="Tìm kiếm bài viết..."
         />
         {search && (
-          <Button variant="outline-secondary" onClick={() => setSearch("")}>
+          <Button variant="outline-secondary" onClick={() => updateSearch("")}>
             × Xóa
           </Button>
         )}

@@ -1,0 +1,310 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Học React từ đầu",
+      "category": "React",
+      "author": "Nguyen Van A",
+      "date": "2024-01-10",
+      "body": "React là thư viện JavaScript phổ biến nhất để xây dựng UI. Nó dùng cấu trúc component-based, cho phép tái sử dụng code và quản lý state hiệu quả.",
+      "tags": ["React", "JavaScript", "Frontend"]
+    },
+    {
+      "id": 2,
+      "title": "useState Hook là gì?",
+      "category": "Hooks",
+      "author": "Tran Thi B",
+      "date": "2024-01-15",
+      "body": "useState cho phép function component có state riêng. Mỗi khi state thay đổi, React sẽ tự động render lại component, cập nhật UI thông minh.",
+      "tags": ["Hooks", "State", "React"]
+    },
+    {
+      "id": 3,
+      "title": "React Router đơn giản",
+      "category": "Routing",
+      "author": "Le Van C",
+      "date": "2024-01-20",
+      "body": "React Router v6 giúp xây dựng SPA nhiều trang mà không reload trình duyệt. Khái niệm cốt lõi: Routes, Route, Link và useNavigate.",
+      "tags": ["Router", "Navigation", "SPA"]
+    },
+    {
+      "id": 4,
+      "title": "React-Bootstrap đơn giản",
+      "category": "UI",
+      "author": "Pham Thi D",
+      "date": "2024-01-25",
+      "body": "React-Bootstrap cung cấp sẵn các component chuẩn như Navbar, Card, Button, Badge giúp xây dựng giao diện nhanh mà đẹp.",
+      "tags": ["Bootstrap", "UI", "CSS"]
+    },
+    {
+      "id": 5,
+      "title": "Component trong React",
+      "category": "React",
+      "author": "Hoang Van E",
+      "date": "2024-02-01",
+      "body": "Component là đơn vị xây dựng cơ bản trong React. Mỗi component có thể nhận props, quản lý state và trả về JSX để hiển thị giao diện.",
+      "tags": ["Component", "React", "JSX"]
+    },
+    {
+      "id": 6,
+      "title": "Props hoạt động như thế nào?",
+      "category": "React",
+      "author": "Dang Thi F",
+      "date": "2024-02-05",
+      "body": "Props giúp truyền dữ liệu từ component cha xuống component con. Props là read-only, vì vậy component con không nên thay đổi trực tiếp dữ liệu nhận được.",
+      "tags": ["Props", "React", "Component"]
+    },
+    {
+      "id": 7,
+      "title": "useEffect Hook cơ bản",
+      "category": "Hooks",
+      "author": "Bui Van G",
+      "date": "2024-02-08",
+      "body": "useEffect được dùng để xử lý side effects như gọi API, lắng nghe event hoặc cập nhật document title sau khi component render.",
+      "tags": ["Hooks", "useEffect", "Side Effect"]
+    },
+    {
+      "id": 8,
+      "title": "Render list trong React",
+      "category": "React",
+      "author": "Vo Thi H",
+      "date": "2024-02-12",
+      "body": "Khi render danh sách trong React, ta thường dùng hàm map để chuyển mảng dữ liệu thành các element JSX. Mỗi item nên có key duy nhất.",
+      "tags": ["List", "Map", "Key"]
+    },
+    {
+      "id": 9,
+      "title": "Conditional Rendering",
+      "category": "React",
+      "author": "Do Van I",
+      "date": "2024-02-16",
+      "body": "Conditional rendering cho phép hiển thị UI dựa trên điều kiện. Có thể dùng if, toán tử ba ngôi hoặc toán tử && trong JSX.",
+      "tags": ["Conditional Rendering", "JSX", "React"]
+    },
+    {
+      "id": 10,
+      "title": "Form trong React",
+      "category": "Form",
+      "author": "Mai Thi K",
+      "date": "2024-02-20",
+      "body": "React thường quản lý form bằng controlled component. Giá trị input được lưu trong state và cập nhật thông qua sự kiện onChange.",
+      "tags": ["Form", "Input", "State"]
+    },
+    {
+      "id": 11,
+      "title": "Controlled Component",
+      "category": "Form",
+      "author": "Nguyen Van L",
+      "date": "2024-02-24",
+      "body": "Controlled component là component mà dữ liệu form được điều khiển bởi React state. Cách này giúp dễ validate và xử lý submit form.",
+      "tags": ["Controlled Component", "Form", "React"]
+    },
+    {
+      "id": 12,
+      "title": "Uncontrolled Component",
+      "category": "Form",
+      "author": "Tran Van M",
+      "date": "2024-02-28",
+      "body": "Uncontrolled component lưu dữ liệu form trong DOM thay vì React state. Ta thường dùng ref để truy cập giá trị input khi cần.",
+      "tags": ["Uncontrolled", "Ref", "Form"]
+    },
+    {
+      "id": 13,
+      "title": "useRef dùng để làm gì?",
+      "category": "Hooks",
+      "author": "Le Thi N",
+      "date": "2024-03-03",
+      "body": "useRef dùng để lưu một giá trị không làm component re-render khi thay đổi. Nó cũng thường được dùng để truy cập trực tiếp DOM element.",
+      "tags": ["Hooks", "useRef", "DOM"]
+    },
+    {
+      "id": 14,
+      "title": "useMemo trong React",
+      "category": "Hooks",
+      "author": "Pham Van O",
+      "date": "2024-03-07",
+      "body": "useMemo giúp ghi nhớ kết quả tính toán giữa các lần render. Nó hữu ích khi có phép tính nặng và chỉ muốn tính lại khi dependency thay đổi.",
+      "tags": ["Hooks", "useMemo", "Performance"]
+    },
+    {
+      "id": 15,
+      "title": "useCallback là gì?",
+      "category": "Hooks",
+      "author": "Ho Thi P",
+      "date": "2024-03-11",
+      "body": "useCallback giúp ghi nhớ function giữa các lần render. Nó thường được dùng khi truyền callback xuống component con để tránh render không cần thiết.",
+      "tags": ["Hooks", "useCallback", "Performance"]
+    },
+    {
+      "id": 16,
+      "title": "Context API trong React",
+      "category": "State Management",
+      "author": "Vu Van Q",
+      "date": "2024-03-15",
+      "body": "Context API giúp chia sẻ dữ liệu giữa nhiều component mà không cần truyền props qua nhiều tầng. Nó phù hợp cho theme, auth hoặc language.",
+      "tags": ["Context", "State Management", "React"]
+    },
+    {
+      "id": 17,
+      "title": "useContext Hook",
+      "category": "Hooks",
+      "author": "Dang Van R",
+      "date": "2024-03-19",
+      "body": "useContext giúp component đọc dữ liệu từ context một cách trực tiếp. Nó làm code gọn hơn so với dùng Context.Consumer.",
+      "tags": ["Hooks", "useContext", "Context"]
+    },
+    {
+      "id": 18,
+      "title": "Custom Hook trong React",
+      "category": "Hooks",
+      "author": "Bui Thi S",
+      "date": "2024-03-23",
+      "body": "Custom hook cho phép tách logic dùng lại được ra khỏi component. Tên custom hook nên bắt đầu bằng use để tuân thủ quy tắc của React.",
+      "tags": ["Custom Hook", "Hooks", "Reuse"]
+    },
+    {
+      "id": 19,
+      "title": "Fetch API trong React",
+      "category": "API",
+      "author": "Vo Van T",
+      "date": "2024-03-27",
+      "body": "Khi gọi API trong React, ta thường đặt logic fetch trong useEffect. Dữ liệu trả về sẽ được lưu vào state để hiển thị lên UI.",
+      "tags": ["API", "Fetch", "useEffect"]
+    },
+    {
+      "id": 20,
+      "title": "Axios với React",
+      "category": "API",
+      "author": "Do Thi U",
+      "date": "2024-03-31",
+      "body": "Axios là thư viện phổ biến để gửi HTTP request. Nó hỗ trợ interceptors, timeout và xử lý response thuận tiện hơn fetch trong nhiều trường hợp.",
+      "tags": ["Axios", "API", "HTTP"]
+    },
+    {
+      "id": 21,
+      "title": "Loading và Error State",
+      "category": "API",
+      "author": "Mai Van V",
+      "date": "2024-04-04",
+      "body": "Khi gọi API, nên quản lý các trạng thái loading, success và error. Điều này giúp UI phản hồi tốt hơn với người dùng.",
+      "tags": ["Loading", "Error", "API"]
+    },
+    {
+      "id": 22,
+      "title": "Pagination cơ bản",
+      "category": "Pagination",
+      "author": "Nguyen Thi W",
+      "date": "2024-04-08",
+      "body": "Pagination giúp chia dữ liệu thành nhiều trang nhỏ. Cách này giúp UI nhẹ hơn và người dùng dễ theo dõi nội dung hơn.",
+      "tags": ["Pagination", "UI", "Data"]
+    },
+    {
+      "id": 23,
+      "title": "Client-side Pagination",
+      "category": "Pagination",
+      "author": "Tran Van X",
+      "date": "2024-04-12",
+      "body": "Client-side pagination phù hợp khi dữ liệu không quá lớn. Toàn bộ dữ liệu được tải về trước, sau đó chia trang ngay trên frontend.",
+      "tags": ["Pagination", "Client-side", "Frontend"]
+    },
+    {
+      "id": 24,
+      "title": "Server-side Pagination",
+      "category": "Pagination",
+      "author": "Le Van Y",
+      "date": "2024-04-16",
+      "body": "Server-side pagination phù hợp với dữ liệu lớn. Frontend chỉ request dữ liệu của trang hiện tại, giúp giảm tải bộ nhớ và tăng hiệu năng.",
+      "tags": ["Pagination", "Server-side", "API"]
+    },
+    {
+      "id": 25,
+      "title": "Search trong React",
+      "category": "Feature",
+      "author": "Pham Thi Z",
+      "date": "2024-04-20",
+      "body": "Tính năng search thường được xây dựng bằng cách lưu keyword trong state, sau đó filter danh sách dữ liệu dựa trên keyword đó.",
+      "tags": ["Search", "Filter", "State"]
+    },
+    {
+      "id": 26,
+      "title": "Filter dữ liệu",
+      "category": "Feature",
+      "author": "Hoang Thi AA",
+      "date": "2024-04-24",
+      "body": "Filter giúp người dùng thu hẹp danh sách theo category, tag hoặc điều kiện cụ thể. Đây là tính năng rất phổ biến trong các ứng dụng frontend.",
+      "tags": ["Filter", "Category", "React"]
+    },
+    {
+      "id": 27,
+      "title": "Sort dữ liệu trong UI",
+      "category": "Feature",
+      "author": "Dang Van AB",
+      "date": "2024-04-28",
+      "body": "Sort cho phép sắp xếp dữ liệu theo ngày, tên hoặc mức độ ưu tiên. Khi sort array trong React, nên tránh mutate trực tiếp state gốc.",
+      "tags": ["Sort", "Array", "State"]
+    },
+    {
+      "id": 28,
+      "title": "Modal trong React-Bootstrap",
+      "category": "UI",
+      "author": "Bui Van AC",
+      "date": "2024-05-02",
+      "body": "Modal thường dùng để hiển thị chi tiết, xác nhận hành động hoặc form nhỏ. React-Bootstrap cung cấp component Modal rất dễ sử dụng.",
+      "tags": ["Modal", "Bootstrap", "UI"]
+    },
+    {
+      "id": 29,
+      "title": "Card Layout",
+      "category": "UI",
+      "author": "Vo Thi AD",
+      "date": "2024-05-06",
+      "body": "Card layout phù hợp để hiển thị danh sách bài viết, sản phẩm hoặc profile. Nó giúp nội dung rõ ràng và dễ scan hơn.",
+      "tags": ["Card", "Layout", "UI"]
+    },
+    {
+      "id": 30,
+      "title": "Responsive Grid",
+      "category": "UI",
+      "author": "Do Van AE",
+      "date": "2024-05-10",
+      "body": "Responsive grid giúp giao diện thích nghi với nhiều kích thước màn hình. Bootstrap grid sử dụng Container, Row và Col để chia layout.",
+      "tags": ["Responsive", "Grid", "Bootstrap"]
+    },
+    {
+      "id": 31,
+      "title": "Deploy React App",
+      "category": "Deployment",
+      "author": "Mai Thi AF",
+      "date": "2024-05-14",
+      "body": "Sau khi build React app, ta có thể deploy lên Vercel, Netlify hoặc GitHub Pages. Mỗi nền tảng có cách cấu hình khác nhau.",
+      "tags": ["Deploy", "React", "Vercel"]
+    },
+    {
+      "id": 32,
+      "title": "Build React App",
+      "category": "Deployment",
+      "author": "Nguyen Van AG",
+      "date": "2024-05-18",
+      "body": "Lệnh build tạo ra phiên bản production tối ưu của React app. Các file thường được xuất ra thư mục dist hoặc build tùy công cụ sử dụng.",
+      "tags": ["Build", "Production", "React"]
+    },
+    {
+      "id": 33,
+      "title": "Vite và React",
+      "category": "Tooling",
+      "author": "Tran Thi AH",
+      "date": "2024-05-22",
+      "body": "Vite là công cụ build hiện đại, khởi động nhanh và hỗ trợ hot module replacement hiệu quả. Nó rất phổ biến trong các dự án React mới.",
+      "tags": ["Vite", "Tooling", "React"]
+    },
+    {
+      "id": 34,
+      "title": "Debug React bằng DevTools",
+      "category": "Tooling",
+      "author": "Le Van AI",
+      "date": "2024-05-26",
+      "body": "React Developer Tools giúp inspect component tree, props, state và render behavior. Đây là công cụ quan trọng khi debug ứng dụng React.",
+      "tags": ["DevTools", "Debug", "React"]
+    }
+  ]
+}
