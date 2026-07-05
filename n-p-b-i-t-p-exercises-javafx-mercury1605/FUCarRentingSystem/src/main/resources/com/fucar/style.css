@@ -1,0 +1,56 @@
+/* === Nền chung toàn hệ thống === */
+.root {
+    -fx-background-color: #F5F9FF;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* === Các loại Buttons chuyên nghiệp === */
+.btn-primary {
+    -fx-background-color: #1565C0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-background-radius: 6;
+    -fx-padding: 8 18 8 18;
+}
+.btn-primary:hover   { -fx-background-color: #1976D2; }
+.btn-primary:pressed { -fx-background-color: #0D47A1; }
+
+.btn-danger {
+    -fx-background-color: #C62828;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-background-radius: 6;
+    -fx-padding: 8 18 8 18;
+}
+.btn-danger:hover { -fx-background-color: #D32F2F; }
+
+/* === Định dạng TableView (Bảng dữ liệu) === */
+.table-view .column-header {
+    -fx-background-color: #1F4E79;
+}
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+/* Đổi màu dòng xen kẽ (Zebra striping) */
+.table-view .table-row-cell:odd  { -fx-background-color: #FFFFFF; }
+.table-view .table-row-cell:even { -fx-background-color: #E3F2FD; }
+.table-view .table-row-cell:hover    { -fx-background-color: #BBDEFB; }
+/* Dòng được chọn */
+.table-view .table-row-cell:selected {
+    -fx-background-color: #1565C0;
+    -fx-text-fill: white;
+}
+
+/* === Trường hợp nhập liệu bị lỗi === */
+.field-error {
+    -fx-border-color: #C62828;
+    -fx-border-width: 2;
+    -fx-border-radius: 4;
+}
+.label-error {
+    -fx-text-fill: #C62828;
+    -fx-font-size: 11px;
+}

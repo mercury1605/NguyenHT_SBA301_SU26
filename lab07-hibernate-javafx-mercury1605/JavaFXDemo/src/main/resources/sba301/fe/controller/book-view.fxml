@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="sba301.fe.controller.BookController">
+    <children>
+        <Pane prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: #2D75E8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="20.0" layoutY="15.0" text="Quản lý Sách Sinh Viên" textFill="WHITE">
+                    <font><Font size="24.0" /></font>
+                </Label>
+            </children>
+        </Pane>
+        <GridPane layoutX="20.0" layoutY="90.0" prefHeight="120.0" prefWidth="560.0" hgap="10" vgap="10">
+            <children>
+                <Label text="Title:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtTitle" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="200"/>
+
+                <Label text="Author:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtAuthor" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="200"/>
+
+                <Label text="ISBN:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtIsbn" GridPane.rowIndex="2" GridPane.columnIndex="1" prefWidth="200"/>
+
+                <HBox spacing="10" GridPane.rowIndex="3" GridPane.columnIndex="1">
+                    <children>
+                        <Button fx:id="btnAddBook" onAction="#addBook" text="Add Book"/>
+                        <Button fx:id="btnDeleteBook" onAction="#deleteBook" text="Delete Book"/>
+                    </children>
+                </HBox>
+            </children>
+        </GridPane>
+        <TableView fx:id="tbBook" layoutX="20.0" layoutY="240.0" prefHeight="240.0" prefWidth="560.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+            <columns>
+                <TableColumn fx:id="colBookId" prefWidth="75.0" text="BookID" />
+                <TableColumn fx:id="colTitle" prefWidth="180.0" text="Title" />
+                <TableColumn fx:id="colAuthor" prefWidth="150.0" text="Author" />
+                <TableColumn fx:id="colIsbn" prefWidth="130.0" text="ISBN" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
